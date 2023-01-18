@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingresos",
+  "info": {
+    "singularName": "ingreso",
+    "pluralName": "ingresos",
+    "displayName": "ingreso"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paciente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::paciente.paciente"
+    },
+    "motivo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::motivo.motivo"
+    },
+    "fecha_entrada": {
+      "type": "datetime",
+      "required": true
+    },
+    "sala_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sala.sala"
+    },
+    "cama_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cama.cama"
+    },
+    "fecha_salida": {
+      "type": "datetime"
+    },
+    "motivo_baja": {
+      "type": "enumeration",
+      "enum": [
+        "médica",
+        "voluntaria"
+      ]
+    },
+    "causa_muerte": {
+      "type": "text"
+    }
+  }
+}

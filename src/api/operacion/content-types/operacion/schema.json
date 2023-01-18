@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operacions",
+  "info": {
+    "singularName": "operacion",
+    "pluralName": "operacions",
+    "displayName": "operacion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paciente_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::paciente.paciente"
+    },
+    "fecha": {
+      "type": "datetime",
+      "required": true
+    },
+    "valoracion": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

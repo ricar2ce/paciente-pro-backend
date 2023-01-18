@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salas",
+  "info": {
+    "singularName": "sala",
+    "pluralName": "salas",
+    "displayName": "sala"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "urgencia": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

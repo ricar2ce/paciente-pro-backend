@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pacientes",
+  "info": {
+    "singularName": "paciente",
+    "pluralName": "pacientes",
+    "displayName": "paciente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellidos": {
+      "type": "string",
+      "required": true
+    },
+    "hc": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "unique": true,
+      "minLength": 2
+    },
+    "estado_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::estado-paciente.estado-paciente"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estado_pacientes",
+  "info": {
+    "singularName": "estado-paciente",
+    "pluralName": "estado-pacientes",
+    "displayName": "estadoPaciente"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

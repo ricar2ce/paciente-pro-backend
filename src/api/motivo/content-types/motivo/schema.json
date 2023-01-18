@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motivos",
+  "info": {
+    "singularName": "motivo",
+    "pluralName": "motivos",
+    "displayName": "motivo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

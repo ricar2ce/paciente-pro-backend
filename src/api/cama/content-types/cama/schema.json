@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "camas",
+  "info": {
+    "singularName": "cama",
+    "pluralName": "camas",
+    "displayName": "cama"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numero": {
+      "type": "integer"
+    },
+    "sala_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sala.sala"
+    },
+    "paciente_id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::paciente.paciente"
+    }
+  }
+}
