@@ -22,7 +22,7 @@
       "relation": "oneToOne",
       "target": "api::motivo.motivo"
     },
-    "fecha_entrada": {
+    "fecha_ingreso": {
       "type": "datetime",
       "required": true
     },
@@ -36,7 +36,7 @@
       "relation": "oneToOne",
       "target": "api::cama.cama"
     },
-    "fecha_salida": {
+    "fecha_egreso": {
       "type": "datetime"
     },
     "motivo_baja": {

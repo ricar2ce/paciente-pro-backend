@@ -2,7 +2,7 @@
   "name": "paciente-pro",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "backend created with Strapi headless cms for a system to hospital's control pacients",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -18,7 +18,7 @@
     "mysql": "2.18.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Ricardo Comendador Escalona"
   },
   "strapi": {
     "uuid": "c1a4175b-e6a6-4594-88f5-a8d9c4838e8b"

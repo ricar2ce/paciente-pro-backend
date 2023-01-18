@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-01-18T19:15:02.676Z"
+    "x-generation-date": "2023-01-18T14:34:25.813Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3583,7 +3583,7 @@
         "properties": {
           "data": {
             "required": [
-              "fecha_entrada"
+              "fecha_ingreso"
             ],
             "type": "object",
             "properties": {
@@ -3609,7 +3609,7 @@
                 ],
                 "example": "string or id"
               },
-              "fecha_entrada": {
+              "fecha_ingreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -3635,7 +3635,7 @@
                 ],
                 "example": "string or id"
               },
-              "fecha_salida": {
+              "fecha_egreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -4120,7 +4120,7 @@
                   }
                 }
               },
-              "fecha_entrada": {
+              "fecha_ingreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -4295,7 +4295,7 @@
                   }
                 }
               },
-              "fecha_salida": {
+              "fecha_egreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -4826,7 +4826,7 @@
                   }
                 }
               },
-              "fecha_entrada": {
+              "fecha_ingreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -5001,7 +5001,7 @@
                   }
                 }
               },
-              "fecha_salida": {
+              "fecha_egreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -5565,7 +5565,7 @@
                   }
                 }
               },
-              "fecha_entrada": {
+              "fecha_ingreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -5740,7 +5740,7 @@
                   }
                 }
               },
-              "fecha_salida": {
+              "fecha_egreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -6271,7 +6271,7 @@
                   }
                 }
               },
-              "fecha_entrada": {
+              "fecha_ingreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -6446,7 +6446,7 @@
                   }
                 }
               },
-              "fecha_salida": {
+              "fecha_egreso": {
                 "type": "string",
                 "format": "date-time"
               },
@@ -7842,7 +7842,8 @@
         "properties": {
           "data": {
             "required": [
-              "fecha",
+              "fecha_terminacion",
+              "duracion",
               "valoracion"
             ],
             "type": "object",
@@ -7858,12 +7859,22 @@
                 ],
                 "example": "string or id"
               },
-              "fecha": {
+              "fecha_terminacion": {
                 "type": "string",
                 "format": "date-time"
               },
+              "duracion": {
+                "type": "string",
+                "format": "time",
+                "example": "12:54.000"
+              },
               "valoracion": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "exitosa",
+                  "hay que esperar  la evolución",
+                  "fallecido en el salón"
+                ]
               }
             }
           }
@@ -8269,12 +8280,22 @@
                   }
                 }
               },
-              "fecha": {
+              "fecha_terminacion": {
                 "type": "string",
                 "format": "date-time"
               },
+              "duracion": {
+                "type": "string",
+                "format": "time",
+                "example": "12:54.000"
+              },
               "valoracion": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "exitosa",
+                  "hay que esperar  la evolución",
+                  "fallecido en el salón"
+                ]
               },
               "createdAt": {
                 "type": "string",
@@ -8726,12 +8747,22 @@
                   }
                 }
               },
-              "fecha": {
+              "fecha_terminacion": {
                 "type": "string",
                 "format": "date-time"
               },
+              "duracion": {
+                "type": "string",
+                "format": "time",
+                "example": "12:54.000"
+              },
               "valoracion": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "exitosa",
+                  "hay que esperar  la evolución",
+                  "fallecido en el salón"
+                ]
               },
               "createdAt": {
                 "type": "string",
@@ -9216,12 +9247,22 @@
                   }
                 }
               },
-              "fecha": {
+              "fecha_terminacion": {
                 "type": "string",
                 "format": "date-time"
               },
+              "duracion": {
+                "type": "string",
+                "format": "time",
+                "example": "12:54.000"
+              },
               "valoracion": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "exitosa",
+                  "hay que esperar  la evolución",
+                  "fallecido en el salón"
+                ]
               },
               "createdAt": {
                 "type": "string",
@@ -9673,12 +9714,22 @@
                   }
                 }
               },
-              "fecha": {
+              "fecha_terminacion": {
                 "type": "string",
                 "format": "date-time"
               },
+              "duracion": {
+                "type": "string",
+                "format": "time",
+                "example": "12:54.000"
+              },
               "valoracion": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "exitosa",
+                  "hay que esperar  la evolución",
+                  "fallecido en el salón"
+                ]
               },
               "createdAt": {
                 "type": "string",
