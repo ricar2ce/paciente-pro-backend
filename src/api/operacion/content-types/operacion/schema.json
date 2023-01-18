@@ -4,7 +4,8 @@
   "info": {
     "singularName": "operacion",
     "pluralName": "operacions",
-    "displayName": "operacion"
+    "displayName": "operacion",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +17,21 @@
       "relation": "oneToOne",
       "target": "api::paciente.paciente"
     },
-    "fecha": {
+    "fecha_terminacion": {
       "type": "datetime",
       "required": true
     },
+    "duracion": {
+      "type": "time",
+      "required": true
+    },
     "valoracion": {
-      "type": "text",
+      "type": "enumeration",
+      "enum": [
+        "exitosa",
+        "hay que esperar  la evolución",
+        "fallecido en el salón"
+      ],
       "required": true
     }
   }

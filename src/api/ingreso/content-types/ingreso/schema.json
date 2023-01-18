@@ -4,24 +4,25 @@
   "info": {
     "singularName": "ingreso",
     "pluralName": "ingresos",
-    "displayName": "ingreso"
+    "displayName": "ingreso",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "paciente": {
+    "paciente_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::paciente.paciente"
     },
-    "motivo": {
+    "motivo_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::motivo.motivo"
     },
-    "fecha_entrada": {
+    "fecha_ingreso": {
       "type": "datetime",
       "required": true
     },
@@ -35,7 +36,7 @@
       "relation": "oneToOne",
       "target": "api::cama.cama"
     },
-    "fecha_salida": {
+    "fecha_egreso": {
       "type": "datetime"
     },
     "motivo_baja": {
