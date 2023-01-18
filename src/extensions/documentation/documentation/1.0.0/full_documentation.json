@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-01-18T05:29:49.869Z"
+    "x-generation-date": "2023-01-18T19:15:02.676Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3587,7 +3587,7 @@
             ],
             "type": "object",
             "properties": {
-              "paciente": {
+              "paciente_id": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -3598,7 +3598,7 @@
                 ],
                 "example": "string or id"
               },
-              "motivo": {
+              "motivo_id": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -3662,7 +3662,7 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "paciente": {
+              "paciente_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -4053,7 +4053,7 @@
                   }
                 }
               },
-              "motivo": {
+              "motivo_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -4368,7 +4368,7 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "paciente": {
+              "paciente_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -4759,7 +4759,7 @@
                   }
                 }
               },
-              "motivo": {
+              "motivo_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -5107,7 +5107,7 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "paciente": {
+              "paciente_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -5498,7 +5498,7 @@
                   }
                 }
               },
-              "motivo": {
+              "motivo_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -5813,7 +5813,7 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "paciente": {
+              "paciente_id": {
                 "type": "object",
                 "properties": {
                   "data": {
@@ -6204,7 +6204,7 @@
                   }
                 }
               },
-              "motivo": {
+              "motivo_id": {
                 "type": "object",
                 "properties": {
                   "data": {
