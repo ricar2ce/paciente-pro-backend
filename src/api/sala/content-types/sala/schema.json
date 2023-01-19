@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sala",
     "pluralName": "salas",
-    "displayName": "sala"
+    "displayName": "sala",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,11 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "camas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cama.cama"
     }
   }
 }

@@ -17,7 +17,7 @@
       "relation": "oneToOne",
       "target": "api::paciente.paciente"
     },
-    "motivo_id": {
+    "motivo_muerte_id": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::motivo.motivo"
@@ -48,6 +48,13 @@
     },
     "causa_muerte": {
       "type": "text"
+    },
+    "motivo": {
+      "type": "enumeration",
+      "enum": [
+        "recepción",
+        "emergencia"
+      ]
     }
   }
 }
