@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-01-19T20:05:26.879Z"
+    "x-generation-date": "2023-01-19T20:24:07.937Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4062,9 +4062,6 @@
                   "voluntaria"
                 ]
               },
-              "causa_muerte": {
-                "type": "string"
-              },
               "motivo": {
                 "type": "string",
                 "enum": [
@@ -4748,9 +4745,6 @@
                   "médica",
                   "voluntaria"
                 ]
-              },
-              "causa_muerte": {
-                "type": "string"
               },
               "motivo": {
                 "type": "string",
@@ -5481,9 +5475,6 @@
                   "médica",
                   "voluntaria"
                 ]
-              },
-              "causa_muerte": {
-                "type": "string"
               },
               "motivo": {
                 "type": "string",
@@ -6248,9 +6239,6 @@
                   "voluntaria"
                 ]
               },
-              "causa_muerte": {
-                "type": "string"
-              },
               "motivo": {
                 "type": "string",
                 "enum": [
@@ -6980,9 +6968,6 @@
                   "médica",
                   "voluntaria"
                 ]
-              },
-              "causa_muerte": {
-                "type": "string"
               },
               "motivo": {
                 "type": "string",

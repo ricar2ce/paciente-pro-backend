@@ -46,9 +46,6 @@
         "voluntaria"
       ]
     },
-    "causa_muerte": {
-      "type": "text"
-    },
     "motivo": {
       "type": "enumeration",
       "enum": [
